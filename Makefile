@@ -4,7 +4,7 @@
 GO = go
 
 # Main package directory
-PKG_DIR = .
+PKG_DIR = ./src
 
 # Target binary name
 TARGET = bin/app
@@ -21,7 +21,7 @@ build:
 
 # Run tests
 test:
-	$(GO) test ./...
+	$(GO) test ./tests...
 
 # Lint the code (assuming golangci-lint is installed)
 lint:
